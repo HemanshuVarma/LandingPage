@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.hemanshu.android.landingpage.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/whatsapp_bg" />
+
+        <TextView
+            android:id="@+id/WhatsAppText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_40"
+            android:text="@string/whatsapp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_25"
+            android:drawableLeft="@drawable/whatsapp"/>
+
+        <TextView
+            android:id="@+id/Tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/WhatsAppText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center_horizontal"
+            android:text="@string/whatsapp_tagline"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:id="@+id/ViewTop"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@id/Tagline"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/gray_200" />
+
+        <TextView
+            android:id="@+id/TotalDownloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ViewTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/total_downloads"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_25" />
+
+        <View
+            android:id="@+id/ViewBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@id/TotalDownloads"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/gray_200" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/WhatsAppText"
+            android:layout_centerInParent="true"
+            android:alpha="0.2"
+            android:src="@drawable/bg_central" />
+
+        <TextView
+            android:id="@+id/DownloadNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ViewBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25"
+            android:gravity="center_horizontal"
+            android:text="@string/download_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_25" />
+
+        <TextView
+            android:id="@+id/KnowMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DownloadNow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25"
+            android:onClick="knowMore"
+            android:text="@string/know_more"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/GooglePlay"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/KnowMore"
+            android:layout_centerHorizontal="true"
+            android:onClick="googlePlay"
+            android:src="@drawable/google_play" />
+
+        <ImageView
+            android:id="@+id/ios_Store"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/GooglePlay"
+            android:layout_centerHorizontal="true"
+            android:onClick="iosStore"
+            android:src="@drawable/ios_store" />
+
+        <ImageView
+            android:id="@+id/MicrosoftStore"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ios_Store"
+            android:layout_centerHorizontal="true"
+            android:onClick="microsoftStore"
+            android:src="@drawable/microsoft_store" />
+
+    </RelativeLayout>
+</ScrollView>

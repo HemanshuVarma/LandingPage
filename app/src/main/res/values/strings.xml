@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Landing Page</string>
+    <string name="whatsapp">\tWhatsApp</string>
+    <string name="whatsapp_tagline">Cross-Platform mobile messaging with\nfriends all over the world</string>
+    <string name="total_downloads">Over 1 Billion+ Downloads</string>
+    <string name="download_now">Download Now!!\n Its Free</string>
+    <string name="know_more">Know more</string>
+</resources>
