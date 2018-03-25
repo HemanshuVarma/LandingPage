@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void microoftStore(View view) {
+    public void microsoftStore(View view) {
         String url = "https://www.microsoft.com/en-in/store/p/whatsapp/9wzdncrdfwbs";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
